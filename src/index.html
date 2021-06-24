@@ -15,22 +15,30 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-md-4">
                 <div class="card">
-                    <div>
+                    <div class="card-body">
                         <form id="formTask">
-                            <div class="form-group">
+                            <div class="form-group m-2">
                                 <input type="text" id="title" placeholder="Add a to do" class="form-control">
+                            </div>
+                            <div class="form-group m-2">
+                                <textarea id="description" rows="8" cols="80" class="form-control" placeholder="Add a description"></textarea>
+                            </div>
+                            <div class="d-grid m-2">
+                                <button class="btn btn-primary" type="submit">Save</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, voluptates, labore, animi laudantium ipsa a amet voluptatibus natus iure eos possimus? Illo numquam et delectus sit ea tempora dolore dignissimos.
+                <div id="task"></div>
             </div>
         </div>    
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
